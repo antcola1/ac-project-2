@@ -1,0 +1,182 @@
+/* CODE FOR ACCESSIBLE SKIP LINK – DO NOT DELETE */
+
+header {
+  background-color: black;
+  color: white;
+}
+
+header img {
+height: 30%;
+width: 30%;
+}
+
+.hero {
+  background: url(../img/hero.jfif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.hero .button {
+border: 2px solid #FFFFFF;
+background-color: black;
+}
+
+.rooms {
+background-color: black;
+}
+
+.rooms h2 {
+margin-left: 1em;
+}
+
+.features {
+background-color: black;
+}
+
+.reserve {
+padding-top: 3em;
+padding-bottom: 3em;
+}
+
+.reserve .button {
+  background-color: black;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  border: ;
+}
+
+.reserve .table {
+
+}
+
+th {
+font-family: 'Lato', sans-serif;
+font-weight: 100;
+}
+
+footer {
+background-color: black;
+}
+
+footer img {
+
+}
+
+.layer-text {
+  display: grid;
+  place-items: center;
+}
+
+.layer-text * {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.layer-text h1 {
+  text-align: center;
+  color: white;
+  font-size: 40pt;
+  margin-top: 7em;
+}
+
+.layer-text button {
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  color: white;
+  font-size: 20pt;
+
+}
+.overlay h2 {
+  color: black;
+}
+
+h1 {
+font-family: 'Lato', sans-serif;
+font-weight: 100;
+}
+
+h2 {
+color: white;
+font-family: 'Lato', sans-serif;
+font-weight: 100;
+}
+
+h3 {
+color: white;
+font-family: 'Lato', sans-serif;
+font-weight: 100;
+}
+
+h4 {
+  color: white;
+}
+
+p {
+font-family: 'Lato', sans-serif;
+color: white;
+}
+
+ul {
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  font-size: 16pt;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: #e76b6b;
+}
+
+li {
+  background-color: black;
+  color: white;
+}
+
+
+.top-bar {
+background-color: black;
+color: white;
+}
+
+
+
+footer {
+  padding-top: 5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+.skip-link {
+  position: absolute;
+  padding: .5rem 1rem;
+  color: #fff;
+  background-color: #212121;
+  text-decoration: none;
+  z-index: 10;
+  transform: translateY(-100%);
+  transition: transform .3s ease-out;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+  outline: #fff solid .125rem;
+}
+
+@media print {
+  .skip-link {
+    display: none;
+  }
+}

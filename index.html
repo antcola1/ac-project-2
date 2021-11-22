@@ -1,0 +1,160 @@
+<!doctype html>
+
+<html class="no-js" lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GDES1060 Project 2</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/foundation-datepicker.min.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- place your code starting here -->
+
+<header>
+<div class="grid-container">
+  <div class="top-bar navbar grix-x" id="example-menu">
+    <div class="top-bar-center">
+
+      <ul class="dropdown menu" data-magellan data-dropdown-menu>
+        <li><a href="#features">ACTIVITIES</a></li>
+        <li><a href="#rooms">ROOMS</a></li>
+        <li><a href="#reserve">BOOK</a></li>
+        <li><a href="#about">ABOUT</a></li>
+      </ul>
+    </div>
+    <h1><img src="img/HADES.jpg" class="logo">HADES</h1>
+  </div>
+</div>
+</header>
+
+
+<main>
+
+<section class="hero grid-x" id="">
+    <div class="cell large-auto">
+      <div class="layer-text">
+        <div class="inner-grid">
+    <h1>TAKE A DIP</h1>
+    <button type="button">BOOK NOW</button>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="rooms grid-x grid-y" id="rooms">
+  <h2>ROOMS</h2>
+  <h4>Explore All</h4>
+  <img src="img/caldera.jfif">
+  <h2>CALDERA</h2>
+  <p>Located within the volcano.  Live amongst the lava with the best heat in the house.</p>
+  </section>
+
+<section class="features grid-x" id="features">
+  <h2>ACTIVITIES</h2>
+  <div class="cell large-auto">
+    <img src="img/hiking.jpg">
+    <h2>HIKING</h2>
+    <p>Explore the beauty of Hades and its surrounding environment through designated hiking trails and tours.</p>
+  </div>
+  <div class="cell large-auto">
+    <img src="img/cafe.jpg">
+    <h2>CAULDRON CAFE</h2>
+    <p>Enjoy a warm, welcoming social atmosphere featuring a diverse selection of food and drink.</p>
+  </div>
+  <div class="cell large-auto">
+    <img src="img/springs.jpg">
+    <h2>HOT SPRINGS</h2>
+    <p>Cleanse your body and spirit and relax in one of the many nearby hot springs.</p>
+  </div>
+</section>
+
+<section class="reserve" id="reserve">
+      <table class="table">
+      <thead>
+        <tr class="grid-x">
+          <th class="cell small-6"><h1>CHECK IN:</h1>
+            <input type="text" class="span2" value="" id="dpd1">
+          </th>
+          <th class="cell small-6"><h1>CHECK OUT:</h1>
+            <input type="text" class="span2" value="" id="dpd2">
+          </th>
+        </tr>
+        <tr class="grid-x">
+          <th class="cell">
+            <input type="submit" class="submit button radius small" value="Check Availability" data-open="confirmation-overlay">
+          </th>
+        </tr>        
+      </thead>
+    </table>
+
+    <!--
+
+    - overlay window with spans used to show data from datepicker
+    - edit the grid however you would like to fit your layout, but
+    - do not delete the <span class="dpd1"></span> and <span class="dpd2"></span> tags, these are used to show the user the dates they selected
+    - this section can go anywhere in your code, but to keep things organized, place it after the section where you have your date picker form
+
+    -->
+
+    <div id="confirmation-overlay" class="reveal" data-reveal>
+      <div class="grid-x">
+        <div class="cell large-7">
+          <div class="overlay">
+            <h1>Success</h1>
+            <h2>You've booked a room from <span class="dpd1"></span> to <span class="dpd2"></span>.</h2>
+          </div>
+        </div>
+      </div>
+      <button class="close-button" data-close aria-label="Close modal" type="button"><span aria-hidden="true">&times;</span></button>
+    </div>
+</section>
+
+</main>
+
+
+<footer>
+  <section class="about" id="about">
+  <div class="grid-container">
+ <img src="img/HADES.jpg">
+ <h3>(123)-456-7890</h3>
+ <h3>About</h3>
+</div>
+ </footer>
+    <!--
+
+    - datepicker widget (be careful when editing)
+    - displays two fields in two columns
+    - place this inside one of your page sections
+
+    -->
+
+
+
+    <!--
+
+    - do not delete anything below this line
+    - do not place any code below this line
+
+    -->
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/vendor/foundation-datepicker.min.js"></script>
+    <script src="js/app.js"></script>
+
+  </body>
+
+</html>
